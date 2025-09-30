@@ -96,7 +96,7 @@ The provided `Dataset` classes are built for the **EndoVis 2018** and **EndoVis 
 
 Download and extract Experiments.zip file in the root directory: https://drive.google.com/file/d/1YLiOv6ZAwX_rA_BdVHOjoJqdKbSdQIbb/view?usp=sharing
 
-1.  Download the dataset and organize it according to the [Directory Structure](https://www.google.com/search?q=%23directory-structure) shown above.
+1.  Download the dataset and organize it according to the Directory Structure shown above.
 2.  The code expects pre-processed data, including:
       * Original images.
       * Multi-class annotation masks.
