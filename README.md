@@ -23,8 +23,8 @@ To use this repository, your project should be organized with the following dire
 │       │   ├── 0/  (Augmentation version 0)
 │       │   │   ├── images/
 │       │   │   ├── annotations/
-│       │   │   ├── binary_annotations/
-│       │   │   └── instance_pred_candidates/
+│       │   │   └── binary_annotations/
+│       │   │  
 │       │   └── ... (Other augmentation versions)
 │       └── val/
 │           ├── images/
@@ -34,7 +34,7 @@ To use this repository, your project should be organized with the following dire
 │           ├── binary_annotations_coco_b/
 │           └── instance_pred_candidates/
 │
-├── surgical-instrument-classification/ (Project Root)
+├── CP_SIS/ (Project Root)
 │   ├── dataset_dinov2.py
 │   ├── surgical_dinov2_query_guidance.py
 │   ├── surgical_dinov2.py
@@ -57,7 +57,7 @@ To use this repository, your project should be organized with the following dire
 
     ```bash
     git clone <your-repository-url>
-    cd surgical-instrument-classification
+    cd CP_SIS
     ```
 
 2.  **Create a Virtual Environment** (Recommended)
@@ -72,20 +72,18 @@ To use this repository, your project should be organized with the following dire
     This project requires several libraries. You can install them using the provided `requirements.txt` file.
 
     ```bash
+    pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu118
     pip install -r requirements.txt
     ```
 
     **requirements.txt:**
 
     ```
-    torch
-    torchvision
     numpy
-    opencv-python-headless
+    opencv-python
     Pillow
     scikit-learn
     pycocotools
-    pytorch-metric-learning
     tqdm
     seaborn
     matplotlib
