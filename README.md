@@ -1,16 +1,13 @@
-Of course. Here is an anonymous GitHub README for the project, including the directory structure and instructions on how to run the code.
+# CP-SIS: Learnable Class Prototypes for Efficient Surgical Instrument Segmentation
 
------
-
-# Surgical Instrument Classification using DINOv2 with Query Guidance
-
-This project provides a framework for fine-tuning DINOv2 models for the task of surgical instrument classification. It leverages an instance-based approach, where candidate masks for potential instruments are classified individually. The implementation uses Low-Rank Adaptation (LoRA) for efficient training and a novel query-guided attention mechanism to improve classification performance.
+This project provides a framework for fine-tuning DINOv2 models for the task of surgical instrument classification. 
+The implementation uses Low-Rank Adaptation (LoRA) for efficient training and a novel query-guided attention mechanism to improve classification performance.
 
 ## Key Features
 
   * **Powerful DINOv2 Backbone**: Easily configurable to use different DINOv2 model sizes (`base`, `large`, `giant`).
   * **Efficient Fine-Tuning**: Utilizes Low-Rank Adaptation (LoRA) to significantly reduce the number of trainable parameters, enabling faster training with lower memory requirements.
-  * **Query-Guided Classification**: Implements learnable "class queries" that interact with image features via cross-attention to produce classification logits, inspired by modern detection transformers.
+  * **Query-Guided Classification**: Implements learnable "class queries" that interact with image features via cross-attention.
   * **Dataset Support**: Includes complete data loaders and evaluation scripts for the Endovis 2018 and Endovis 2017 datasets.
   * **Comprehensive Workflow**: Provides scripts for training, evaluation, and visualizing predictions on a single image.
 
@@ -88,7 +85,6 @@ To use this repository, your project should be organized with the following dire
     Pillow
     scikit-learn
     pycocotools
-    segment-anything-py
     pytorch-metric-learning
     tqdm
     seaborn
