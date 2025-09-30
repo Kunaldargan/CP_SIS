@@ -99,7 +99,7 @@ Download and extract Experiments.zip file in the root directory: https://drive.g
 1.  Download the dataset and organize it according to the Directory Structure shown above.
 2.  The code expects pre-processed data, including:
       * Original images.
-      * Multi-class annotation masks.
+      * Annotation masks.
       * Binary masks for each instrument instance.
       * Candidate instance masks generated from a separate detection/segmentation model (e.g., Mask R-CNN, SAM).
 
